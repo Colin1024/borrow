@@ -1,37 +1,18 @@
-# borrow
+### 借条审批
 
 #### 介绍
-基于Yii2的一个简单的借条审批系统
+基于Yii2的简单借条审批系统(18年在外包公司写的一个项目)
 
 #### 软件架构
-软件架构说明
+Yii2 + AdminLTE
 
 
-#### 安装教程
+#### 界面展示
 
-1. xxxx
-2. xxxx
-3. xxxx
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0712/174643_eb777a8c_1804453.png "index.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0712/174704_491406c5_1804453.png "products.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0712/174723_7b776547_1804453.png "user.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0712/174747_ad7dd32e_1804453.png "kefu.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0712/174814_4d9ab390_1804453.png "admin-banner.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0712/174828_e6f088e3_1804453.png "admin-commission.png")
 
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
