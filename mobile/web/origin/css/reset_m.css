@@ -1,0 +1,240 @@
+
+/* ========== */
+/* = css reset = */
+/* ========== */
+
+@charset "utf-8";
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 10px;
+    min-height: 100%;
+    letter-spacing: 0px;
+}
+/* 禁用iPhone中Safari的字号自动调整 */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    color: #1b1b1b;
+    background: #283d93;
+    font-family: Microsoft Yahei,SimSun,Helvetica;
+    min-width: 300px;
+    /* max-width: 640px; */
+    font-size: 1.5rem;
+    line-height: 1.5;
+    min-height: 100%;
+}
+
+fieldset,
+img {
+    border: 0;
+    display: block;
+}
+
+ol,
+ul,
+dl {
+    list-style: none;
+}
+.card  ul{
+     text-align: center;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+em,
+s,
+i {
+    font-style: normal;
+}
+
+input,
+button,
+select,
+textarea {
+    border: 0;
+    -webkit-appearance:none;
+    border-radius: 0;
+    font-family: Microsoft Yahei,SimSun,Helvetica;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+/*禁用了文本的拖拉，尤其在谷歌下*/
+
+a {    line-height: 2.7rem;
+    text-decoration: none;
+    color: #ff340b;
+    display: block;
+  background-color: #fff;
+    margin-left: .3rem;
+    border-radius: .3rem;
+}
+
+a:hover {
+    color: #1b1b1b;
+    text-decoration: none;
+}
+/* 设置HTML5元素为块 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+/* 设置图片视频等自适应调整 */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video embed,
+.video object,
+.video iframe {
+    width: 100%;
+    height: auto;
+}
+/* 1.去除android a/button/input标签被点击时产生的边框 2.去除ios a标签被点击时产生的半透明灰色背景 */
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 1.5rem;
+}
+/*去除ios默认的按钮样式*/
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+    -webkit-appearance: none;
+}
+
+
+::-moz-placeholder {
+    color: #c6c6c6;
+    font-size: 1.6rem;
+    opacity: 1;
+}
+:-moz-placeholder {
+    color: #c6c6c6;
+    font-size: 1.6rem;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #c6c6c6;
+    font-size: 1.6rem;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    color: #c6c6c6;
+    font-size: 1.6rem;
+    opacity: 1;
+}
+
+
+
+/* ========== */
+/* = global = */
+/* ========== */
+/*浮动*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+/*清除浮动*/
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ellipsis2{
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+    overflow: hidden;  /** 隐藏超出的内容 **/
+}
+@media screen and (max-width: 374px) {
+    html {
+        font-size: 9px;
+    }
+}

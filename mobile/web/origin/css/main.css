@@ -1,0 +1,999 @@
+.font-blue{
+    color: #1e82d4;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+.border-bot,.border-left,.border-top{
+    position: relative;
+}
+
+.border-bot:before,.border-left:before,.border-top:before {
+    position: absolute;
+    content: "";
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+   
+    z-index: 2;
+}
+.border-bot:before{
+    bottom: 0;
+    left: -50%;
+    right: -50%;
+    height: 1px;
+}
+.border-top:before{
+    top: 0;
+    left: -50%;
+    right: -50%;
+    height: 1px;
+    
+}
+.border-left:before{
+    top: -50%;
+    bottom: -50%;
+    left: 0;
+    width: 1px;
+}
+.card {
+
+    margin-top: 8px;
+    background-color:rgba(255, 255, 255, 0.22)；
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+}
+
+.btnwrap {
+    padding: 140px 20px 20px;
+}
+
+.btn {
+    height: 44px;
+    line-height: 44px;
+    background-color: #1e82d4;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    border-radius: 44px;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn-big {
+    width: 100%;
+}
+
+
+/* 首页 */
+
+.index-swiper {
+    width: 100%;
+    height: 5.6rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.index-swiper .hd {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0.32rem;
+    text-align: center;
+}
+
+.index-swiper .hd ul {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.index-swiper .hd ul li {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.08rem;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 0.16rem;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.index-swiper .hd ul .on {
+    background: #fff;
+}
+
+.index-swiper .bd {
+    position: relative;
+    z-index: 0;
+}
+
+.index-swiper .bd li img {
+    width: 100%;
+    height: 5.6rem;
+}
+
+.index-swiper .bd li a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* 取消链接高亮 */
+}
+
+.indexpage .business-scope {
+    padding: 0.4rem;
+    margin-top: 0.2rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.indexpage .scopecell {
+    width: 4.56rem;
+    height: 4.04rem;
+    margin-bottom: 0.08rem;
+    background-repeat: no-repeat;
+    background-position: right 0.56rem bottom 0.56rem;
+    background-size: 2.08rem;
+}
+
+.indexpage .scopecell a {
+    padding: 0.67rem 0 0 0.5rem;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+[data-dpr="1"] .indexpage .scopecell a {
+    font-size: 16px;
+}
+
+[data-dpr="2"] .indexpage .scopecell a {
+    font-size: 32px;
+}
+
+[data-dpr="3"] .indexpage .scopecell a {
+    font-size: 48px;
+}
+
+.indexpage .scopecell:nth-of-type(2n+1) {
+    float: left;
+}
+
+.indexpage .scopecell:nth-of-type(2n) {
+    float: right;
+}
+
+.indexpage .scopecell:nth-of-type(1) {
+    border-radius: 0.08rem 0 0 0;
+    background-color: #30bae9;
+    background-image: url(../images/icon_scope01.png);
+}
+
+.indexpage .scopecell:nth-of-type(2) {
+    border-radius: 0 0.08rem 0 0;
+    background-color: #f58474;
+    background-image: url(../images/icon_scope02.png);
+}
+
+.indexpage .scopecell:nth-of-type(3) {
+    border-radius: 0 0 0 0.08rem;
+    background-color: #f5ac4e;
+    background-image: url(../images/icon_scope03.png);
+}
+
+.indexpage .scopecell:nth-of-type(4) {
+    border-radius: 0 0 0.08rem 0;
+    background-color: #afa9ff;
+    background-image: url(../images/icon_scope04.png);
+}
+
+
+/* 房屋抵押贷款 */
+
+.mortgage .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.house-mortgage .formcont>ul>li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 25px;
+}
+
+.house-mortgage .formcont li .label {
+  text-align:left;
+    width: 6em;
+    color: #cacaca;
+    font-size: 1.6rem;
+}
+
+.house-mortgage .formcont li input[type="text"] {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    height: 2rem;
+    text-align: right;
+    color: #cacaca;
+    font-size: 1.4rem;
+  border-bottom: none;
+}
+
+.house-mortgage .formcont li .icon {
+    margin-left: 10px;
+}
+
+
+/* 房屋抵押评估 */
+
+.house_assess .formcont li input[type="text"] {
+    text-align: left;
+}
+
+.house_assess .assess-detail h1 {
+    height: 44px;
+    padding: 0 15px;
+    line-height: 44px;
+    font-size: 1.6rem;
+}
+
+.house_assess .loan-limit {
+    padding: 22px 0;
+    text-align: center;
+}
+
+.house_assess .loan-limit h2 {
+    font-size: 1.5rem;
+}
+
+.house_assess .loan-limit p {
+    font-size: 2.5rem;
+    color: #1e82d4;
+    line-height: 1.5;
+}
+
+.house_assess .remarks {
+    margin-bottom: 30px;
+    color: #959595;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.house_assess .remarks a {
+    display: inline;
+    margin: 0 6px;
+    font-size: 1.2rem;
+    color: #1e82d4;
+}
+
+
+/* 房屋抵押评估失败 */
+
+.house_assess .assess-fail p {
+    padding: 20px 15px;
+    font-size: 1.5rem;
+    color: #ff3232;
+}
+
+
+/* 房抵贷申请成功 */
+
+.apply-success .status {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.apply-success .icon-success {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: url(../images/icon_success.png) #3bb932 no-repeat center;
+    background-size: 50%;
+}
+
+.apply-success .status h1 {
+    padding-top: 15px;
+    line-height: 2;
+    font-size: 1.8rem;
+}
+
+.apply-success .status p {
+    font-size: 1.3rem;
+    color: #959595;
+}
+
+.apply-success .process h1 {
+    height: 44px;
+    padding: 0 15px;
+    line-height: 44px;
+    font-size: 1.4rem;
+}
+
+.apply-success .process .steps {
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.apply-success .process .step {
+    display: inline-block;
+    width: 2em;
+}
+
+.apply-success .process .arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/icon_arrow.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.apply-success .credentials {
+    padding: 15px 7px;
+    font-size: 1.5rem;
+}
+
+.apply-success .credentials span {
+    padding: 0 8px;
+}
+
+
+/* 企业大额贷款 */
+
+.house-mortgage .corporate li input[type="text"] {
+    text-align: left;BACKGROUND-COLOR: transparent
+ 
+  
+
+}
+
+.model-select-box {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+    margin: 0 6px;
+    line-height: 24px;
+    border: 1px solid #c6c6c6;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 9;
+}
+
+.model-select-text {
+    height: 24px;
+    padding: 0 20px 0 6px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background: url(../images/icon_down.png) #fff no-repeat center right 6px;
+    background-size: 7px 5px;
+    border-radius: 4px;
+}
+
+.model-select-option {
+    display: none;
+    position: absolute;
+    width: 200%;
+    top: 36px;
+    left: -50%;
+    background-color: #fff;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    box-shadow: 0 0 6px 0 #bbb;
+    max-height: 170px;
+}
+.model-select-option:before{
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    width: 12px;
+    height: 9px;
+    margin-left: -6px;
+    background: url(../images/icon_arrow_top.jpg) no-repeat center;
+    background-size: 12px 9px;
+    
+}
+.model-select-option ul{
+    padding:0 20%;
+    max-height: 170px;
+    overflow-y:scroll; 
+}
+.model-select-option li {
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #1b1b1b;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.model-select-option li.seleced {
+    color: #1e82d4;
+}
+
+/* 信用贷款 */
+.credit-loan{
+    padding:4%;
+    text-align: center;
+}
+.credit-loan .loanswrap{
+    float: left;
+    width: 33.33%;
+    margin-top: 20px;
+}
+
+.credit-loan .loanswrap a{
+    display: block;
+    text-align: center;
+    color: #1b1b1b;
+    font-size: 1.3rem;
+}
+
+.credit-loan .loanswrap .loanicon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px auto;
+}
+.credit-loan .loanswrap:nth-of-type(1) .loanicon{
+    background-image: url(../images/credit_loan01.png);
+    background-color: #1e82d4;
+}
+.credit-loan .loanswrap:nth-of-type(2) .loanicon{
+    background-image: url(../images/credit_loan02.png);
+    background-color: #afa9ff;
+    background-size: 20px 23px;
+}
+.credit-loan .loanswrap:nth-of-type(3) .loanicon{
+    background-image: url(../images/credit_loan03.png);
+    background-color: #f5ac4e;
+}
+.credit-loan .loanswrap:nth-of-type(4) .loanicon{
+    background-image: url(../images/credit_loan04.png);
+    background-color: #f58474;
+}
+.credit-loan .loanswrap:nth-of-type(5) .loanicon{
+    background-image: url(../images/credit_loan05.png);
+    background-color: #f5ac4e;
+}
+.credit-loan .loanswrap:nth-of-type(6) .loanicon{
+    background-image: url(../images/credit_loan06.png);
+    background-color: #99d598;
+    background-size: 22px 27px;
+}
+
+
+/* 信用卡 */
+.credit-card .banner img{
+    width: 100%;
+}
+
+.credit-card .card-operate{
+    float: left;
+    padding: 15px 0;
+    width: 25%;
+    text-align: center;
+}
+.credit-card .card-operate a{
+    color: #1b1b1b;
+    font-size: 1.3rem;
+}
+.card-operate .operateicon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px auto;
+}
+.card-operate:nth-of-type(1) .operateicon{
+    background-image: url(../images/credit_card_ope01.png);
+    background-color: #f5ac4e;
+}
+.card-operate:nth-of-type(2) .operateicon{
+    background-image: url(../images/credit_card_ope02.png);
+    background-color: #afa9fe;
+}
+.card-operate:nth-of-type(3) .operateicon{
+    background-image: url(../images/credit_card_ope03.png);
+    background-color: #30bae9;
+}
+.card-operate:nth-of-type(4) .operateicon{
+    background-image: url(../images/credit_card_ope04.png);
+    background-color: #f58474;
+    background-size: 14px 16px;
+}
+
+.credit-card .recommend>h1{
+    height: 40px;
+    padding:0 15px;
+    line-height: 40px;
+    font-size: 1.4rem;
+    color: #1b1b1b;
+}
+.credit-card .cardlists li{
+    position: relative;
+    padding:15px 15px 15px 120px;
+    line-height: 1.4;
+}
+.credit-card .cardlists .pic{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -30px;
+    width: 95px;
+    height: 60px;
+}
+.credit-card .cardlists .content{
+    display: inline-block;
+    vertical-align: middle;
+}
+.credit-card .cardlists .cardname{
+    font-size: 1.6rem;
+    color: #1b1b1b;
+}
+
+.credit-card .cardlists .carddesc{
+    font-size: 1.3rem;
+    color: #626262;
+}
+.credit-card .cardlists .applynum{
+    font-size: 1.3rem;
+    color: #1e82d4;
+    line-height: 1.8;
+}
+
+.banklists{
+    width: 100%;
+    padding: 30px 0 10px;
+    background-color: #fff;
+}
+.credit-card .banklists{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+.banklists .bank{
+    float: left;
+    width: 25%;
+    margin-bottom: 20px;
+}
+.banklists .bank>img{
+    width: 40%;
+    margin:0 auto;
+}
+.banklists .bank p{
+    color: #1b1b1b;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2;
+}
+
+/* 信用卡详情 */
+.credit-card-detail .detail-hd{
+    padding:15px;
+}
+.credit-card-detail .detail-hd h1{
+    font-size: 1.6rem;
+}
+.credit-card-detail .detail-hd p{
+    color: #626262;
+    font-size: 1.3rem;
+}
+
+.credit-card-detail .detail-title{
+    height: 40px;
+    line-height: 40px;
+    padding:0 15px;
+    font-size: 1.4rem;
+}
+
+.credit-card-detail .privileges{
+    padding: 10px 15px;
+}
+
+.credit-card-detail .privileges li{
+    padding-left: 20px;
+    font-size: 1.5rem;
+    background: url(../images/icon_privilege.png) no-repeat center left;
+    background-size: 12px 12px;
+}
+
+.credit-card-detail .basic-info{
+    padding:0 15px;
+}
+.credit-card-detail .basic-info li{
+    position: relative;
+    padding:4px 0 4px 5em;
+    font-size: 1.5rem;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.credit-card-detail .basic-info .label{
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4em;
+    color: #959595;
+}
+
+.credit-card-detail .process{
+    padding: 15px;
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.credit-card-detail .process .arrow{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/icon_arrow.png) no-repeat center;
+    background-size: 100% 100%;
+}
+/* 我的贷款 */
+.my-loan{
+    font-size: 1.5rem;
+    color: #1b1b1b;
+}
+.my-loan .manager{
+    position: relative;
+    padding:10px 15px 10px 56px;
+    min-height: 36px;
+    background: url(../images/icon_arrow_right.png) no-repeat center right 15px;
+    background-size: 7px 12px;
+}
+
+.my-loan .manager .avatar{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.my-loan .manager .basicinfo{
+    position: absolute;
+    left: 56px;
+    top: 50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+.my-loan .manager .tel{
+    font-size: 1.3rem;
+    color: #626262;
+}
+.my-loan .item{
+    height: 44px;
+    padding:0 15px;
+    line-height: 44px;
+}
+.my-loan .item .time{
+    float: right;
+    font-size: 1.2rem;
+    color: #959595;
+}
+.my-loan .item .status{
+    float: right;
+    font-size: 1.2rem;
+    color: #1e82d4;
+}
+.my-loan .view-order{
+    background: url(../images/icon_arrow_right.png) no-repeat center right 15px;
+    background-size: 7px 12px;
+}
+.my-loan .view-order a{
+    font-size: 1.3rem;
+    color: #959595;
+}
+/* 订单详情 */
+.order-details .upload-pic{
+    padding: 10px 15px;
+}
+.order-details .upload-pic h6{
+    font-size: 1.5rem;
+    color: #959595;
+}
+
+.order-details .upload-pic .photo{
+    position: relative;
+    float: left;
+    width: 23.5%;
+    margin-top: 6px;
+    margin-right: 2%;
+    height: 46px;
+    border:1px dashed #e8e8e8;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    background: url(../images/upload_bg.png) no-repeat center;
+    background-size: 50%;
+    overflow: hidden;
+}
+.order-details .upload-pic .photo:nth-of-type(4n){
+    margin-right: 0;
+}
+.order-details .upload-pic .photo input[type="file"]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+/* 我的消息 */
+.mymsg {
+    overflow: hidden;
+}
+.mymsg .card{
+    position: relative;
+}
+.mymsg .btn-del{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -80px;
+    width: 80px;
+    box-shadow: 0 -8px 0 0 #e8e8e8;
+    text-align: center;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 1.7rem;
+}
+.mymsg .btn-del>span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+.mymsg .title,.mymsg .content{
+    padding:10px 15px;
+    color: #959595;
+}
+.mymsg .title{
+    font-size: 1.6rem;
+}
+.mymsg .content{
+    font-size: 1.5rem;
+}
+.mymsg .unread .title{
+    color: #1b1b1b;
+}
+.mymsg .unread .content{
+    color: #626262;
+}
+/* 分享落地页 */
+.sharing .topbg{
+    width: 100%;
+    height: 150px;
+    background-color: #1e82d4;
+
+}
+.sharing .content {
+    text-align: center;
+    color: #959595;
+    font-size: 1.3rem;
+    line-height: 2;
+}
+.sharing .content .avatar{
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    margin-top: -30px;
+    padding:2px;
+    border-radius: 30px;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+
+.sharing .content .strong{
+    font-size: 1.6rem;
+    color: #282828;
+    line-height: 1.2;
+}
+.sharing .others{
+    padding:15px 0;
+}
+.sharing .others ul{
+    padding:10px 0;
+    font-size: 0;
+}
+.sharing .others li{
+    display: inline-block;
+    margin-left: -6px;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.sharing .telwrap{
+    padding: 30px 15px 0;
+}
+.sharing .telwrap input{
+    height: 44px;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.sharing .telwrap .btn{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+/* 手机号填写完成 */
+.sharing .telfinish{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #1b1b1b;
+}
+.sharing .telfinish .finishicon{
+    width: 55px;
+    height: 55px;
+    margin:0 auto 10px;
+    background: url(../images/icon_success.png) #3bb932 no-repeat center;
+    background-size: 50%;
+    border-radius: 50%;
+}
+
+
+.sharing .telfinish a{
+    margin-top: 40px;
+    font-size: 1.3rem;
+    color: #1e82d4;
+    text-decoration: underline;
+}
+
+/* 邀请赚佣金 */
+.sharing .QRcode{
+    padding: 24px 0;
+}
+.sharing .QRcode img{
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+}
+
+.sharing .invited{
+    float: left;
+    width: 50%;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #1b1b1b;
+}
+.sharing .invited .btn{
+    position: relative;
+    width: 80px;
+    height: 26px;
+    margin: 20px auto 0    ;
+    line-height: 26px;
+    background-color: #fff;
+    color: #1e82d4;
+    font-size: 1.3rem;
+}
+.sharing .invited .btn:before{
+    content: "";
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    top: -50%;
+    bottom: -50%;
+    border: 1px solid #1e82d4;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    border-radius: 100px;
+    z-index: 1;
+}
+
+/* 邀请好友 */
+.invitedpage .invited-hd{
+    padding:15px;
+}
+.invitedpage .invited-hd h1{
+    font-size: 1.6rem;
+    color: #1e82d4;
+}
+.invitedpage .invited-hd p{
+    font-size: 1.3rem;
+    color: #959595;
+}
+.invitedpage .invited-hd p span{
+    margin-right: 10px;
+}
+
+.invitedpage .level{
+    float: left;
+    width: 33.33%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.3rem;
+    color: #282828;
+}
+.invitedpage .level.selected{
+    color: #1e82d4;
+}
+.invitedlists .invitedlist{
+    display: none;
+}
+.invitedlists .invitedlist li{
+    position: relative;
+    min-height: 36px;
+    padding: 15px 15px 15px 56px;
+}
+
+.invitedlist li .avatar{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.invitedlist li .username{
+    font-size: 1.5rem;
+    color: #1b1b1b;
+}
+
+.invitedlist li .time{
+    font-size: 1.2rem;
+    color: #626262;
+}
+
+.invitedlist li .time>span{
+    float: right;
+    color: #1b1b1b;
+}
